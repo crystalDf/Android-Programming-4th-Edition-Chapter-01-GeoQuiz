@@ -2,7 +2,6 @@ package com.star.geoquiz
 
 import android.os.Bundle
 import android.view.Gravity
-import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_main.*
@@ -13,7 +12,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        true_button.setOnClickListener { view: View ->
+        true_button.setOnClickListener {
             val toast = Toast.makeText(
                 this,
                 R.string.correct_toast,
@@ -22,7 +21,7 @@ class MainActivity : AppCompatActivity() {
             toast.show()
         }
 
-        false_button.setOnClickListener { view: View ->
+        false_button.setOnClickListener {
             val toast = Toast.makeText(
                 this,
                 R.string.incorrect_toast,
